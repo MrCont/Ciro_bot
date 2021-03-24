@@ -1,5 +1,3 @@
-import mp3
-import discord
 from discord.ext import commands
 from discord import FFmpegPCMAudio
 import random
