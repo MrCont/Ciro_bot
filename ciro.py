@@ -4,6 +4,7 @@ from discord.ext import commands
 from discord import FFmpegPCMAudio
 import random
 from gtts import gTTS
+token = input("Insert bot token")
 def dillo_in_napoletano(_str):
     return gTTS(_str,lang="it")
 bot = commands.Bot(command_prefix=">")
@@ -37,5 +38,5 @@ async def proverbio(ctx):
     source = FFmpegPCMAudio(executable="ffmpeg.exe", source="msg.mp3")
     voice.play(source)
     
-bot.run("ODI0MTk4NDM4ODYxNDA2Mjc4.YFr4nA.D5q9c4gyPXusqt3GqefGDE8z5-w")
+bot.run(token)
 
